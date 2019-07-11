@@ -1,0 +1,54 @@
+{% extends "blog/base_easy.html"%}
+{% load static %}
+{%block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-container">
+  <h2>Friends list</h2>
+  <p>This is the list of your friends </p>
+  <ul class="w3-ul w3-card-4">
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="{% static 'img/male.jpg' %}" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Denis</span><br>
+        <span>Marketing</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="{% static 'img/male.jpg' %}" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Jianli</span><br>
+        <span>Marketing</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="{% static 'img/male.jpg' %}" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Ilia</span><br>
+        <span>Tech</span>
+      </div>
+    </li>
+ 
+
+     <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="{% static 'img/female.jpg' %}" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Bing</span><br>
+        <span>Finance</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+{% endblock content %}
