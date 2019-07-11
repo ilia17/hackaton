@@ -1,0 +1,80 @@
+{% extends "blog/base_easy.html"%}
+{% load static %}
+{%block content %}
+<!-- connection establishemnt-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+<style>
+.w3-lobster {
+  font-family: "Lobster", Sans-serif;
+}
+</style>
+<div class="w3-container w3-lobster font-effect-brick-sign">
+  <p class="w3-xlarge">Welcome to Hult</p>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>New Connection Available</h2>
+
+  <div class="w3-card-4" style="width:30%">
+    <header class="w3-container w3-light-grey">
+      <h3>John Doe</h3>
+    </header>
+    <div class="w3-container">
+      <p>Hult Alumni</p>
+      <hr>
+      <img src="{% static 'img/male.jpg' %}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
+      <p>CFO at Tesla</p><br>
+    </div>
+    <button class="w3-button w3-block w3-dark-grey"  onclick="alert('Connection Established')">+ Connect</button>
+  </div>
+</div>
+
+
+<div class="w3-container">
+  <p></p>
+
+  <div class="w3-card-4" style="width:30%">
+    <header class="w3-container w3-light-grey">
+      <h3>John Wick</h3>
+    </header>
+    <div class="w3-container">
+      <p>Hult Alumni</p>
+      <hr>
+      <img src="{% static 'img/male.jpg' %}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
+      <p>Vice President Of UFC</p><br>
+    </div>
+    <button class="w3-button w3-block w3-dark-grey"  onclick="alert('Connection Established')">+ Connect</button>
+  </div>
+</div>
+
+<div class="w3-container">
+  <p></p>
+
+  <div class="w3-card-4" style="width:30%">
+    <header class="w3-container w3-light-grey">
+      <h3>Sarah Stone</h3>
+    </header>
+    <div class="w3-container">
+      <p>Hult Alumni</p>
+      <hr>
+      <img src="{% static 'img/female.jpg' %}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
+      <p>CMO at L'oreal Paris</p><br>
+    </div>
+    <button class="w3-button w3-block w3-dark-grey"  onclick="alert('Connection Established')">+ Connect</button>
+  </div>
+</div>
+
+
+
+</body>
+
+
+
+
+{% endblock content %}
